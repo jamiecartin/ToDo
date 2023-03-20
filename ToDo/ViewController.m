@@ -6,17 +6,19 @@
 //
 
 #import "ViewController.h"
+#import "ToDoViewController.h"
 
 @interface ViewController ()
-
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+  if (self = [super initWithCoder:aDecoder]) {
+    TodoViewController *todoVC = [[TodoViewController alloc] init];
+    [self addChildViewController:todoVC];
+  }
+  return self;
 }
-
 
 @end

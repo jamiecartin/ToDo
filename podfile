@@ -1,0 +1,9 @@
+platform :ios, '16.0'
+use_frameworks!
+
+target 'ToDo' do
+  pod 'YogaKit', '~> 1.18.1'
+  pod 'IGListKit', '~> 4.0.0'
+  pod 'MaterialComponents/Dialogs'
+  pod 'MaterialComponents/Buttons'
+end
